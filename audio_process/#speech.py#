@@ -1,0 +1,17 @@
+import speech_recognition
+import sys
+import subprocess as sp
+from time import sleep
+
+voice = "voice.wav"
+
+print("please input your voice") 
+sp.call('arecord -D plughw:1,0 voice.wav')
+sleep(2)
+print("save voice")
+
+r = speech_recognition.Recognizer()
+with speech_recognition.AudioFile(voice) as source:
+    audio = r.record(source)
+a = r.recognize_google(audio, language="ja-JP")
+print(a)
