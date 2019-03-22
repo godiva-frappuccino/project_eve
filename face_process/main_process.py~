@@ -1,0 +1,13 @@
+import cv2
+import numpy as np
+from get_image import CameraModule
+from face_detector import faceDetector
+import time
+
+def main():
+    while True:
+        # detect human
+
+        # sleep
+        time.sleep(0.5)
+        # face move
