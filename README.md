@@ -1,2 +1,3 @@
 # project_eve
-(´・ω・｀)
+Let's make Hadaly!!
+For perfect human.
